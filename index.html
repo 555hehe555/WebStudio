@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&display=swap" rel="stylesheet">
+
     <title>WebStudio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <div>
-                <a href="index.html">
-                    <span>Web</span><span>Studio</span>
+                <a class="header-logo" href="index.html">
+                    <span class="header-logo-blue">Web</span>Studio
                 </a>
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li>
-                        <a href="#">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link-hover-style" href="#">
                             студіо
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link-hover-style" href="#">
                             портфоліо
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link-hover-style" href="#">
                             контакти
                         </a>
                     </li>
                 </ul>
             </nav>
             <ul class="adres-list">
-                <li>
-                    <a href="mailto:info@devstudio.com">
+                <li class="adres-list-item">
+                    <a class = "link-hover-style adres-list-link" href="mailto:info@devstudio.com">
                         info@devstudio.com
                     </a>
                 </li>
-                <li>
-                    <a href="tel:+380961111111">
+                <li class="adres-list-item">
+                    <a class = "link-hover-style adres-list-link" href="tel:+380961111111">
                         +38 096 111 11 11 
                     </a>
                 </li>
@@ -49,8 +58,10 @@
     </header>
     <main>
         <section class="hero">
-            <h1>Ефективні рішення для<br> вашого бізнесу</h1>
-            <button type="button">Замовити послугу</button>
+            <div class="container hero-container">
+                <h1 class="hero-title">Ефективні рішення <br>для вашого бізнесу</h1>
+                <button type="button" class="hero-button">Замовити послугу</button>
+            </div>
         </section>
         <section>
             <ul>
@@ -119,12 +130,12 @@
         <p>м. Київ, пр-т Лесі Українки, 26</p>
         <ul>
             <li>
-                <a href="mailto:info@devstudio.com">
+                <a class = "link-hover-style" href="mailto:info@devstudio.com">
                     info@devstudio.com
                 </a>
             </li>
             <li>
-                <a href="tel:+380961111111">
+                <a class = "link-hover-style" href="tel:+380961111111">
                     +38 096 111 11 11 
                 </a>
             </li>

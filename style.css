@@ -1,3 +1,4 @@
+/* -----------reset------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,6 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -37,6 +39,15 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
+/* -----------code------------ */
+/* -----------heder----------- */
+:root{
+  --main-font:"Roboto";
+  --logo-font:"Raleway";
+}
+
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -50,14 +61,21 @@ body {
   line-height: 42px;
   letter-spacing: 0.03em;
   display: block;
+  background-color: #FFF;
 }
 
 .header{
   display:flex;
 }
 
+.header-container{
+  display: flex;
+  align-items: center;
+}
+
 .nav-list, .adres-list {
   display:flex;
+  padding: 35px 0px;
 }
 
 .container {
@@ -66,5 +84,94 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: coral;
+}
+
+.header-logo{
+  font-family: var(--logo-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000;
+  padding : 35px, 0px, 35px, 0px;
+}
+
+.header-logo-blue{
+  color: #2196F3;
+}
+
+.nav{
+  margin-left: 95px;
+}
+
+.nav-list-link{
+  font-family: var(--main-font);
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.adres-list-link{
+  font-family: var(--main-font);
+  color:#757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.link-hover-style:hover,
+.link-hover-style:focus{
+  color: #2196F3;
+}
+
+.nav-list-item:not(:last-child){
+  margin-right: 55px;
+}
+
+.adres-list{
+  margin-left: auto;
+}
+
+.adres-list-item:not(:last-child){
+  margin-right: 44px;
+}
+
+.hero{
+  background: #2F303A;
+}
+
+.hero-container{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title{
+  margin-bottom: 40px;
+  color: #FFF;
+  text-align: center;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px; /* 136.364% */
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 24px;
+  border-radius: 5px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
 }
